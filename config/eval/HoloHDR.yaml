@@ -1,0 +1,27 @@
+prop_params:
+#  wavelength: [ 6.38e-4, 5.20e-4, 4.50e-4 ]
+  wavelength: [ 638e-9, 520e-9, 450e-9 ]
+#  prop_distance: 1.5e2
+  prop_distance: 2e-1
+#  pixel_size: 3.6e-3
+  pixel_size: 6.4e-6
+  propagation_type: 'Bandlimited Angular Spectrum'
+  resolution: [ 1080, 1920 ]
+
+path:
+  test_set: 'data/test'
+  test_save_dir: 'result'
+
+model_params:
+  iter_num: 200
+  lr: 5e-1
+  cuda: true
+  norm: true
+  batch_size: 1
+  data_range: 1.0
+
+num_subframe: 3
+image_loss_weight: 1.0
+laser_loss_weight: 0.05
+variation_loss_weight: 0.1
+anchor_wavelength: 1

@@ -1,0 +1,19 @@
+prop_params:
+  wavelength: [6.38e-4, 5.20e-4, 4.50e-4]
+  prop_distance: 1.5e2
+  pixel_size: 3.6e-3
+  resolution: [1024, 2048]
+
+path:
+  model_dir: 'ckpt/DualNet'
+  log_dir: 'log/DualNet'
+  train_set: 'data/train'
+  valid_set: 'data/test'
+
+model_params:
+  data_range: 1.0
+  batch_size: 1
+  num_workers: 1
+  num_devices: 1
+  max_epochs: 100
+  lr: 1e-3

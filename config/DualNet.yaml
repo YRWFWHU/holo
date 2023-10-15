@@ -1,0 +1,8 @@
+wavelength: [638e-9, 520e-9, 450e-9]
+distance: 20e-2
+pixel_size: 6.4e-6
+
+method: DualNet
+valid_set: 'data/test'
+resolution: (1080, 1920)
+model_path: 'ckpt/DualNet'
